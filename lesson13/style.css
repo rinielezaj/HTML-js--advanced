@@ -1,0 +1,52 @@
+ul{
+    list-style-type: circle;
+}
+.lista2{
+    list-style: square;
+}
+/* ol{
+    list-style: none;
+    padding: 0;
+    border: 2px solid green;
+}
+ol li{
+    background-color: aqua;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+ol li {
+    border: 2px solid blue;
+} */
+
+.lista3{
+    border-left: 5px solid green;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 15px 20px;
+    font-size: 10px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid red;
+    padding: 15px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #775757;
+}
+
+tbody tr:nth-child(even){
+    background-color: #867878;
+}
+
+div{
+    overflow: scroll;
+    background-color: #775757;
+    width:300px;
+    height:200px;
+}
