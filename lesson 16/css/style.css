@@ -1,0 +1,52 @@
+.gallery{
+    margin: 5px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 160px;
+}
+.gallery:hover{ 
+    border: 2px solid #777;
+}
+
+.gallery{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    padding: 15px;
+    text-emphasis: center;
+}
+
+a[href="https://shkolladigjitale.com/"]{
+    color: blue;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p[class*="ds"]{
+    background: blue;
+    color: white;
+    padding: 20px;
+}
+
+div[id~=ds]{
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+id[title^="blue"]{
+    border: 2px solid blue;
+    box-shadow: 5px black;
+}
+
+h1[class|=heading]{
+    background:purple;
+    padding: 20px;
+    color: white;
+}
+
+input[placeholder$="name"]{
+    border: 2px solid red;
+}
