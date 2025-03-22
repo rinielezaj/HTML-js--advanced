@@ -1,0 +1,43 @@
+/* zoom in */
+
+#earth img{
+    transform: scale(1);
+    transition: .5s ease-in-out;
+}
+
+#earth:hover img{
+    transform: scale(1.3);
+    
+}
+
+/* slide */
+
+#mars img{
+    margin-left: 0px;
+    transition: 1s cubic-bezier(0.6, 0.01, 0.4, 1);
+}
+
+#mars:hover img{
+    margin-left: 100px;
+    
+}
+
+#uranus img{
+    filter: blur(3px);
+    transition: .5s ease-in-out;
+}
+
+#uranus:hover img{
+    filter: blur(0px);
+}
+
+
+
+#neptune img{
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+
+#neptune:hover img{
+    filter: grayscale(0%);
+}
