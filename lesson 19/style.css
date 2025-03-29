@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    background-color: aqua;
+}
+
+.container div{
+    background-color: wheat;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.container div:nth-child(1){
+    order: 2;
+}
+.container div:nth-child(2){
+    order: 4;
+}
+.container2{
+    display: flex;
+    background-color: rgb(111, 111, 148);
+    flex-direction: column-reverse;
+}
+.container2 div{
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+}
+
+.container3{
+    display: flex;
+    background-color: rgb(19, 141, 94);
+    flex-direction: row;
+}
+.container3 div{
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+}
+.container3 div:nth-child(1){
+    flex-grow: 4;
+}
+
+.container4{
+    display: flex;
+    background-color: rgb(16, 56, 41);
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.container4 div{
+    background-color: rgb(16, 76, 129);
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+    width: 30%;
+}
+
+.container5{
+    display: flex;
+    background-color: rgb(121, 156, 141);
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container5 div{
+    background-color: rgb(16, 76, 129);
+    margin: 10px;
+    padding: 40px;
+    font-size: 35px;
+    width: 400px;
+}
