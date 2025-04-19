@@ -1,0 +1,48 @@
+@media all and (min-width: 600px) {
+    
+    body{
+        background: blue;
+        color: white;
+    }
+
+    img{
+        width: 1440px;
+        height: 810px;
+    }
+
+}
+
+
+@media all and (max-width: 600px) {
+    
+    body{
+        background: rgb(206, 206, 221);
+        color: rgb(26, 18, 18);
+    }
+
+    img{
+        width: 480px;
+        height: 270px;
+    }
+}
+
+h1{
+    border: 2px solid white;
+    padding: 20px;
+}
+
+@media all and (orientation:landscape) {
+    
+    h1{
+        font-size: 50px;
+    }
+
+}
+
+@media all and (orientation:portrait) {
+    
+    h1{
+        font-size: 25px;
+    }
+
+}
