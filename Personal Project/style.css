@@ -1,0 +1,212 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Sinova';
+    src: url('path/to/Sinova-Medium.woff2') format('woff2'),
+         url('path/to/Sinova-Medium.woff') format('woff');
+    font-weight: 500; /* This corresponds to Medium weight */
+    font-style: normal;
+  }
+
+.navbar {
+    background-color: #f9f9f9;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    color: black;
+    margin-top: -15px;
+    font-family: 'Sinova', sans-serif;
+  }
+  
+  .navbar p{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Sinova', sans-serif;
+  }
+
+  .navbar p:hover{
+    color: #e63c3c;
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Sinova', sans-serif;
+  }
+  
+  .nav-links a:hover {
+    color: #e63c3c;
+  }
+
+header{
+    padding: 40px 20px 20px;
+    color: rgb(49, 49, 49)
+}
+
+.logo{
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+p{
+    color: rgb(22, 22, 22);
+    font-size: 1.1rem;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.product-card{
+    background: white;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.5 ease;
+}
+
+.product-card:hover{
+    box-shadow: 0 4px 12px #0000005e;
+}
+
+.product-card img{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h2{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-card p{
+    font-weight: bold;
+    color: #333;
+}
+
+.buy-button{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e63c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover{
+    background-color: #c50a0a;
+}
+
+.product-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: left;
+  }
+
+  .product-page img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .product-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .product-price {
+    font-size: 1.5rem;
+    color: #e63c3c;
+    margin-bottom: 20px;
+  }
+
+  .product-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .size-select {
+    margin-bottom: 30px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  select {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .buy-button {
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    background-color: #e63c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .buy-button:hover {
+    background-color: #c50a0a;
+  }
