@@ -1,39 +1,34 @@
 body{
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    background-color: white;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 @font-face {
-    font-family: 'Sinova';
-    src: url('path/to/Sinova-Medium.woff2') format('woff2'),
-         url('path/to/Sinova-Medium.woff') format('woff');
-    font-weight: 500; /* This corresponds to Medium weight */
-    font-style: normal;
-  }
-
+  font-family: 'Montserrat-Medium';
+  src: url('Desktop/Montserrat-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .navbar {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     position: sticky;
     top: 0;
-    width: 100%;
-    z-index: 999;
     color: black;
     margin-top: -15px;
-    font-family: 'Sinova', sans-serif;
   }
   
-  .navbar p{
+  .navbar a{
     text-decoration: none;
     color: #333;
     font-weight: bold;
     transition: color 0.3s;
-    font-family: 'Sinova', sans-serif;
+    margin-right: auto;
   }
 
-  .navbar p:hover{
+  .navbar a:hover{
     color: #e63c3c;
   }
   
@@ -63,7 +58,6 @@ body{
     color: #333;
     font-weight: bold;
     transition: color 0.3s;
-    font-family: 'Sinova', sans-serif;
   }
   
   .nav-links a:hover {
@@ -102,7 +96,7 @@ p{
 }
 
 .product-card{
-    background: white;
+    background: rgb(245, 245, 245);
     border: 1px solid #eee;
     padding: 20px;
     border-radius: 10px;
@@ -210,3 +204,171 @@ p{
   .buy-button:hover {
     background-color: #c50a0a;
   }
+
+  .popular {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+  
+  .popular .product-card {
+    background: rgb(235, 235, 235);
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popular .product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 5px; /* reduce gap */
+  }
+  
+  .popular .product-card h2,
+  .popular .product-card p,
+  .popular .product-card a {
+    margin: 4px 0; /* reduce vertical margin on text/buttons */
+  }
+  
+  .popular .slider-title {
+    grid-column: 1 / -1;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .button { 
+    margin-top: -50px;
+    font-size: 1.2rem;
+    padding: 0px 15px;
+    text-align: center;
+    display: inline-block;
+    color: #e63c3c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Container */
+footer {
+  background-color: #ff2727;
+  color: white;
+  padding: 50px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Newsletter Section */
+.footer-newsletter {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-newsletter h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-newsletter form {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.footer-newsletter button {
+  padding: 10px 15px;
+  background-color: #e60000;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+  background-color: #c10000;
+}
+
+/* Footer Links */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #e60000;
+}
+
+/* Social Media Icons */
+.footer-social-media {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social-media .social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.3s;
+  color: white;
+}
+
+.footer-copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  color: white;
+}
