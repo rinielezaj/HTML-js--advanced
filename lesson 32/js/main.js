@@ -1,60 +1,103 @@
-var input = document.getElementById("input_id");
-var button = document.getElementById("btn_id");
-var text = document.getElementById("teksti_id");
+var input = document.getElementById('input_id');
+var button = document.getElementById('btn_id');
+var text = document.getElementById('teksti_id');
 
 
 button.onclick = function(){
     text.innerHTML = input.value;
 }
 
-// var teksti1 ="The best school in the world is Digital School";
-// var result = teksti1.search("Digital School");
-// document.getElementById("results1").innerHTML=result;
 
-// var teksti1 ="The best school in the world is Digital School";
-// var result = teksti1.replace(/Digital School/,"Another school");
-// document.getElementById("results2").innerHTML=result;
-
-// var teksti1 ="The best school in the world is Digital School";
-// var result = teksti1.search(/Digital School/);
-// document.getElementById("results3").innerHTML=result;
+// var text = "The best school in the world is Digital School!";
+// var result = text.search("Digital School");
+// document.getElementById("result1").innerHTML = result;
 
 
 
-// var teksti1 ="abcdef";
 
-// var result =  new RegExp('abc')
-
-// document.getElementById("results4").innerHTML=result.test(teksti1)
-
-
-// var teksti1 ="My school is the best school in the world";
-// var ckaMeBeSearch =  /school/g
-
-// document.getElementById("results5").innerHTML=teksti1.match(ckaMeBeSearch)
-
-// var teksti1 ="My school is the best school in the world";
-// var ckaMeBeSearch =  /i/g
-// document.getElementById("results6").innerHTML=teksti1.match(ckaMeBeSearch)
+// var text = "The best school in the world is Digital School!";
+// var result = text.search(/Digital School/);
+// document.getElementById("result2").innerHTML = result;
 
 
-// var teksti1 ="My school is the best school in the world";
-// var ckaMeBeSearch =  /[abc]/g
-// document.getElementById("results7").innerHTML=teksti1.match(ckaMeBeSearch)
 
-// var teksti1 ="My school is top 10 in the world";
-// var ckaMeBeSearch =  /[0-9]/g
-// document.getElementById("results8").innerHTML=teksti1.match(ckaMeBeSearch)
+// var text = "The best school in the world is Digital School!";
+// var result = text.replace(/Digital School/,"Another School");
+// document.getElementById("result3").innerHTML = result;
 
 
-// var teksti1 ="My school is top  the best in the world";
-// var ckaMeBeSearch =  /(top|best|world)/g
-// document.getElementById("results9").innerHTML=teksti1.match(ckaMeBeSearch)
 
-// var teksti1 ="100 percent";
-// var ckaMeBeSearch =  /\d/g
-// document.getElementById("results10").innerHTML=teksti1.match(ckaMeBeSearch)
+// var text = "abcdef";
+// var regex = new RegExp('abc')
+// document.getElementById("result4").innerHTML = regex.test(text);
 
-var teksti1 ="My school is top  the best in the world";
-var ckaMeBeSearch =  /\s/g
-document.getElementById("results10").innerHTML=teksti1.match(ckaMeBeSearch)
+
+
+// var text = "My school is the best school in the world!";
+// var regex = /school/g;
+// document.getElementById("result5").innerHTML = text.match(regex);
+
+
+
+// var text = "Digital School is the best school in the world!";
+// var regex = /i/g;
+// document.getElementById("result6").innerHTML = text.match(regex);
+
+
+
+// var text = "Digital School is the best school in the world!";
+// var regex = /[abc]/g;
+// document.getElementById("result7").innerHTML = text.match(regex);
+
+
+
+// var text = "Digital School is in top 10 best schools of the world!";
+// var regex = /[0-9]/g;
+// document.getElementById("result8").innerHTML = text.match(regex);
+
+
+
+
+// var text = "My school is the best school in the world!";
+// var regex = /(top|best|school)/g;
+// document.getElementById("result9").innerHTML = text.match(regex);
+
+
+
+// var text = "100 percent!";
+// var regex = /\d/g;
+// document.getElementById("result10").innerHTML = text.match(regex);
+
+
+
+// var text = "My school is the best school in the world!";
+// var regex = /\s/g;
+// document.getElementById("result11").innerHTML = text.match(regex);
+
+// var text = "Heeeey how are you";
+// var regex = /e+/g;
+// document.getElementById("result11").innerHTML = text.match(regex);
+
+// var text = "so, i hope we'll see each other again soon...";
+// var regex = /so*/g;
+// document.getElementById("result11").innerHTML = text.match(regex);
+
+// var text = "hey, hi, hiii!!!!";
+// var regex = /hi?/g;
+// document.getElementById("result11").innerHTML = text.match(regex);
+
+// var text = "hellooo, hello, helooo!!";
+// var regex = /o{3}/g;
+// document.getElementById("result11").innerHTML = text.match(regex);
+
+// var text = "hellooo, helloooooooooo, heloooo!!";
+// var regex = /o{3,5}/g;
+// document.getElementById("result11").innerHTML = text.match(regex);
+
+// var text = "bestfriendsend, boyfriendsend, girlfriendsend";
+// var regex = /send$/g;
+// document.getElementById("result11").innerHTML = text.match(regex);
+
+var text = "cat, catalog";
+var regex = /^cat/g;
+document.getElementById("result11").innerHTML = text.match(regex)
